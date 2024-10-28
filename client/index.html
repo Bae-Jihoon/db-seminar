@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badge's Bookstore</title>
+</head>
+<body>
+  <h1>Badge's Bookstore</h1>
+
+  <!-- 도서 목록 표시 -->
+  <div id="book-list"></div>
+
+  <!-- 도서 추가 폼 -->
+  <form id="book-form">
+    <input type="text" id="title" placeholder="Book Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="number" id="year" placeholder="Year" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <h2>Checkout</h2>
+
+  <!-- 책 ID 및 수량 입력 -->
+  <label for="book-ids">Book ID and Quantity (Format: id:quantity, e.g., 1:2,3:1):</label>
+  <input type="text" id="book-ids" placeholder="1:2,3:1">
+
+  <!-- 총 가격 계산 버튼 -->
+  <button id="calculate-total">Calculate Total Cost</button>
+
+  <!-- 계산 결과 표시 -->
+  <div id="checkout-result"></div>
+
+  <!-- JavaScript 파일 -->
+  <script src="script.js"></script>
+</body>
+</html>
